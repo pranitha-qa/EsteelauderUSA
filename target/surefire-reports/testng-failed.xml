@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.ELUS.testcases.SearchTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="searchWithNonExistingProduct"/>
+          <include name="searchWithExistingProduct"/>
+        </methods>
+      </class> <!-- com.ELUS.testcases.SearchTest -->
+      <class name="com.ELUS.testcases.LoginTest">
+        <methods>
+          <include name="VerifyWithInValidCredentials"/>
+          <include name="VerifyWithInValidEmail"/>
+          <include name="VerifyWithValidCredentials" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="VerifyWithInValidPassword"/>
+          <include name="teardown"/>
+          <include name="VerifyWithoutCredentilas"/>
+        </methods>
+      </class> <!-- com.ELUS.testcases.LoginTest -->
+      <class name="com.ELUS.testcases.RegisterTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="registerWithMandateFields"/>
+          <include name="setup"/>
+          <include name="registerWithExistingEmail"/>
+          <include name="registerWithoutEnteringAnyFields"/>
+        </methods>
+      </class> <!-- com.ELUS.testcases.RegisterTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
