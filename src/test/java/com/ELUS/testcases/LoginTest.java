@@ -35,7 +35,7 @@ public class LoginTest extends base {
     Lp= hm.clickOnSignIn();
 
 	}
-
+// After method is code
 	@AfterMethod
 	void teardown() {
 		driver.quit();
